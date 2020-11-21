@@ -1,12 +1,14 @@
 ﻿Imports System.IO
 Public Class EmailPassword
     Private Sub SaveBtn_Click(sender As Object, e As EventArgs) Handles SaveBtn.Click
+
+
         Dim St As StreamWriter = New StreamWriter("tarc_email.txt")
-        St.WriteLine(EmailBox.Text)
+        St.WriteLine(Crypto.Encrypt(EmailBox.Text.ToString, 15))
         St.Close()
 
         St = New StreamWriter("tarc_password.txt")
-        St.WriteLine(PasswordBox.Text)
+        St.WriteLine(Crypto.Encrypt(PasswordBox.Text, 15))
         St.Close()
 
         Me.Close()

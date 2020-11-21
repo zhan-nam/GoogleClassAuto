@@ -25,7 +25,6 @@ E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroo
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\bin\Debug\WebDriver.Support.dll
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\bin\Debug\WebDriver.xml
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\bin\Debug\WebDriver.Support.xml
-E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.vbprojAssemblyReference.cache
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.EmailPassword.resources
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.Form1.resources
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.Resources.resources
@@ -35,3 +34,4 @@ E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroo
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.exe
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.xml
 E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.pdb
+E:\desktop\college\§ Visual Programming\Personal\GoogleClassAuto\GoogleClassroomAuto\obj\Debug\GoogleClassroomAuto.vbprojAssemblyReference.cache

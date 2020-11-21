@@ -108,15 +108,15 @@ Public Class Form1
 
             error_tracking += "login ⇒ "
             'enter email
-            sendkey_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input", My.Computer.FileSystem.ReadAllText("tarc_email.txt"))
+            sendkey_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input", Crypto.Decrypt(My.Computer.FileSystem.ReadAllText("tarc_email.txt"), 15))
             'click
-            'click_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]")
+            click_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]")
 
             sleepfor(6)
             'enter password
-            sendkey_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input", My.Computer.FileSystem.ReadAllText("tarc_password.txt"))
+            sendkey_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input", Crypto.Decrypt(My.Computer.FileSystem.ReadAllText("tarc_password.txt"), 15))
             'click
-            'click_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]")
+            click_via_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/div[2]")
             error_tracking += "succeed" + vbNewLine
 
             sleepfor(6)
