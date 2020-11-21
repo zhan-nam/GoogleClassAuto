@@ -27,13 +27,13 @@ Partial Class Form1
         Me.statusbox = New System.Windows.Forms.Label()
         Me.urlBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.timeBox = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.AddEmailPasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearEmailPasswrodToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.timeBox = New System.Windows.Forms.DateTimePicker()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -88,21 +88,6 @@ Partial Class Form1
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "GoogleClassroom Auto"
         '
-        'timeBox
-        '
-        Me.timeBox.CheckedState.Parent = Me.timeBox
-        Me.timeBox.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.timeBox.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.timeBox.HoverState.Parent = Me.timeBox
-        Me.timeBox.Location = New System.Drawing.Point(364, 181)
-        Me.timeBox.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.timeBox.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.timeBox.Name = "timeBox"
-        Me.timeBox.ShadowDecoration.Parent = Me.timeBox
-        Me.timeBox.Size = New System.Drawing.Size(321, 36)
-        Me.timeBox.TabIndex = 9
-        Me.timeBox.Value = New Date(2020, 11, 19, 16, 28, 57, 0)
-        '
         'Guna2Button1
         '
         Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
@@ -146,17 +131,28 @@ Partial Class Form1
         'Timer1
         '
         '
+        'timeBox
+        '
+        Me.timeBox.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right
+        Me.timeBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.timeBox.Format = System.Windows.Forms.DateTimePickerFormat.Time
+        Me.timeBox.Location = New System.Drawing.Point(364, 181)
+        Me.timeBox.Name = "timeBox"
+        Me.timeBox.Size = New System.Drawing.Size(321, 30)
+        Me.timeBox.TabIndex = 13
+        Me.timeBox.Value = New Date(2020, 11, 21, 12, 48, 36, 0)
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(719, 329)
         Me.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Controls.Add(Me.timeBox)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.statusbox)
         Me.Controls.Add(Me.urlBox)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.timeBox)
         Me.Controls.Add(Me.Guna2Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -173,11 +169,11 @@ Partial Class Form1
     Friend WithEvents statusbox As Label
     Friend WithEvents urlBox As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents timeBox As Guna.UI2.WinForms.Guna2DateTimePicker
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents AddEmailPasswordToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClearEmailPasswrodToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClearAllToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents timeBox As DateTimePicker
 End Class

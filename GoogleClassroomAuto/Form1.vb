@@ -193,4 +193,10 @@ Public Class Form1
     Private Sub AddEmailPasswordToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddEmailPasswordToolStripMenuItem.Click
         EmailPassword.ShowDialog()
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        timeBox.Format = DateTimePickerFormat.Custom
+        timeBox.CustomFormat = "hh:mm tt"
+        timeBox.Value = New DateTime(Now.Year, Now.Month, Now.Day, Now.Hour, Now.Minute, 0, 0)
+    End Sub
 End Class
